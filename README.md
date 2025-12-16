@@ -21,45 +21,14 @@ The system detects common network attacks and suspicious activity and automatica
 * Automatic IP blocking using iptables
 * Alert logging via fast.log
 
-## \## Detection Examples
+## Conclusion
 
-## 
+This project successfully demonstrates how Suricata can be used to detect and respond to network attacks in real time.
 
-## \### ICMP Detection
+Visualization dashboards were considered optional, and analysis was performed directly using Suricata log files.
 
-## !\[ICMP Alert](screenshots/icmp\_alert.png)
+## Author
 
-## 
-
-## \### Nmap Scan Detection
-
-## !\[Nmap Alert](screenshots/nmap\_alert.png)
-
-## 
-
-## \### SSH Brute-force Detection
-
-## !\[SSH Alert](screenshots/ssh\_bruteforce\_blocked.png)
-
-## 
-
-## \### Blocked Attacker (iptables)
-
-## !\[iptables](screenshots/iptables\_block.png)
-
-## 
-
-## \## Conclusion
-
-## This project successfully demonstrates how Suricata can be used to detect and respond to network attacks in real time.  
-
-## Visualization dashboards were considered optional, and analysis was performed directly using Suricata log files.
-
-## 
-
-## \## Author
-
-## \- Name: YOUR NAME
-
-## \- Field: Cybersecurity /
+- Name: Abderrahmane Qitout
+- Field: Cybersecurity 
 
