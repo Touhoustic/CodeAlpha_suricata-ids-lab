@@ -1,0 +1,6 @@
+alert icmp any any -> any any (msg:"LAB ICMP Ping detected"; itype:8; sid:9003001; rev:1;)
+alert icmp any any -> any any (msg:"LAB ICMP Ping Sweep detected"; itype:8; threshold:type threshold, track by_src, count 5, seconds 10; sid:9003002; rev:1;)
+alert tcp any any -> any any (msg:"LAB Nmap SYN scan detected"; flags:S; threshold:type threshold, track by_src, count 10, seconds 5; sid:9003003; rev:1;)
+alert tcp any any -> any any (msg:"LAB TCP Port Scan detected"; flags:S; threshold:type threshold, track by_src, count 20, seconds 10; sid:9003004; rev:1;)
+alert tcp any any -> any 22 (msg:"LAB SSH Brute Force attempt"; flow:to_server,established; threshold:type threshold, track by_src, count 5, seconds 60; sid:9003005; rev:1;)
+alert http any any -> any any (msg:"LAB Suspicious HTTP enumeration"; content:"Nmap"; http_user_agent; sid:9003006; rev:1;)
